@@ -43,8 +43,14 @@ The [library for communication with eWay-CRM API](https://github.com/eway-crm/js
 
 Feel free to update or add new dependencies. Using the latest React features is welcome.
 
-## Commit and Push
+## My solution
 
-Once you have your amazing app, commit and [push](https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository) the codes to your repo. Give [rstefko](https://github.com/orgs/eway-crm/people/rstefko) and [havri](https://github.com/orgs/eway-crm/people/havri) permissions to your repository.
+For styling I decided to use Material UI library and its sx prop.
 
-Let us know when the final revision is pushed (commit/tag/branch). We are looking forward to see your results.
+1.  Goal:
+    I created a single input for email with error handling for no and invalid email before I send API reguest. If no email is found I show error message.
+    If contact is found, I show user business card with some of the info that I decided was most important.
+2.  Goal:
+    I decided to use localStorage for storing data about previously searched contacts (this way it persist page refresh). Also at first only basic info is displayed, and if user clicks on more icon, API call is made to get the rest of the info.
+
+Overall I tried to keep code modular with Components files and also two custom hooks. For the scale of this app and the goals I decided to not deal with routing since I felt like it wasnt neceserry.
